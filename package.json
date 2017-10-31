@@ -1,0 +1,34 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "Udemy yelp camp project fullstack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d88naimi/YelpCamp.git",
+    "start": "nod e app.js"
+  },
+  "author": "David Naimi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d88naimi/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/d88naimi/YelpCamp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "moongoose": "0.0.5",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.2.1",
+    "request": "^2.83.0"
+  }
+}
