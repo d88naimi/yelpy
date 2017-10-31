@@ -18,7 +18,7 @@ campgroundRoutes = require("./routes/campgrounds"),
 indexRoutes      = require("./routes/index")
 
 // mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://heroku_9lz706nv:it95ejjshmiasdrj8f0uuek0js@ds243345.mlab.com:43345/heroku_9lz706nv");
+mongoose.connect("mongodb://heroku_nbwfq4n5:p25uli1f98lbqnchs0hb0hr6b0@ds243285.mlab.com:43285/heroku_nbwfq4n5");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
