@@ -1,5 +1,14 @@
 #RESTful Routing
 
+#David 
+* un-comment in app.js line 20 db 
+* turn on mongod
+* mongo
+* show dbs
+* use yelp_camp
+* nodemon app.js 
+
+
 ##Introduction
 * Define REST and explain WHY it matters
 * List all 7 RESTful routes
