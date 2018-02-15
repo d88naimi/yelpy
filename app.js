@@ -12,11 +12,12 @@ Comment     = require("./models/comment"),
 User        = require("./models/user"),
 seedDB      = require("./seeds")
 
-//requring routes
+//requiring routes
 var commentRoutes    = require("./routes/comments"),
 campgroundRoutes = require("./routes/campgrounds"),
 indexRoutes      = require("./routes/index")
 
+// mongoose.connect
 mongoose.Promise = Promise;
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI, {
@@ -28,13 +29,13 @@ if (process.env.MONGODB_URI) {
     });
 }
 
-// mongoose.connect("mongodb://heroku_nbwfq4n5:p25uli1f98lbqnchs0hb0hr6b0@ds243285.mlab.com:43285/heroku_nbwfq4n5");
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
-// seedDB(); //seed the database
+seedDB(); //seed the database
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
