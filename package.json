@@ -24,7 +24,7 @@
     "express": "^4.15.5",
     "express-session": "^1.15.6",
     "method-override": "^2.3.10",
-    "moongoose": "0.0.5",
+    "mongoose": "^5.0.5",
     "nodemon": "^1.12.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",

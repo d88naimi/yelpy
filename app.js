@@ -18,17 +18,11 @@ campgroundRoutes = require("./routes/campgrounds"),
 indexRoutes      = require("./routes/index")
 
 // mongoose.connect
-mongoose.Promise = Promise;
 if (process.env.MONGODB_URI) {
-    mongoose.connect(process.env.MONGODB_URI, {
-        useMongoClient: true
-    });
+    mongoose.connect(process.env.MONGODB_URI);
 } else {
-    mongoose.connect("mongodb://localhost/yelp_camp", {
-        useMongoClient: true
-    });
+    mongoose.connect("mongodb://localhost/yelp_camp", {});
 }
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
