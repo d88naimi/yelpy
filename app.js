@@ -17,6 +17,7 @@ var commentRoutes    = require("./routes/comments"),
 campgroundRoutes = require("./routes/campgrounds"),
 indexRoutes      = require("./routes/index")
 
+mongoose.Promise = Promise;
 if (process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI, {
         useMongoClient: true
